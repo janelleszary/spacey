@@ -89,5 +89,5 @@ def get_scatter_chart(selected_site, slider_vals):
 # Run the app
 import os
 if __name__ == '__main__':
-    app.run_server(host=os.getenv('IP', '0.0.0.0'), 
+    app.run(host=os.getenv('IP', '0.0.0.0'), 
             port=int(os.getenv('PORT', 4444)))
